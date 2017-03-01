@@ -1,0 +1,23 @@
+#include <cstdlib>
+#include <iostream>
+
+using namespace std;
+
+int sprawdz(int x, int y, int z)
+{
+    if(y*z==x){
+        cout<< "zlozona" <<endl;
+        exit(0);} }
+
+int main()
+{
+int a,b,i;
+cin>>a;
+
+for(int i=2; i*i<=a; i++){
+    b=a/i;
+    sprawdz(a,b,i);}
+
+cout<< "pierwsza"<<endl;
+return 0;
+}
